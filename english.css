@@ -1,0 +1,67 @@
+/* Mizan Finance V5 — English typography and left-to-right layout. */
+:root{--mizan-font:'Plus Jakarta Sans',Inter,'Segoe UI',system-ui,-apple-system,sans-serif}
+html,body{direction:ltr;text-align:left;font-family:var(--mizan-font);font-size:13.5px;letter-spacing:-.012em}
+button,input,select,textarea{font-family:var(--mizan-font);letter-spacing:-.012em}
+button{font-weight:700}
+.brand h1{font-size:19px;font-weight:800;letter-spacing:-.035em}
+.brand p{font-size:10px;letter-spacing:.005em}
+.mark{font-family:var(--mizan-font);font-size:22px;letter-spacing:-.075em}
+.nav-label{letter-spacing:.11em;font-size:10px;font-weight:800}
+.nav-item,.data-table,.data-table th,.data-table td,.v4-action-menu button,.v4-theme-choice,.v4-quick-item,.v4-cal-listitem{text-align:left}
+.nav-item{gap:12px;font-size:12px}
+.nav-item.active{box-shadow:inset 3px 0 var(--primary)}
+.pageheading,.section-title{font-weight:800;letter-spacing:-.04em}
+.pagehint,.section-note{font-size:11px}
+.stat-value,.v4-hero-num{font-size:clamp(21px,2vw,28px);font-weight:800;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+.v4-intro h2{font-weight:800;letter-spacing:-.05em}
+.v4-widget h3,.panel h3{letter-spacing:-.025em;font-size:13px;font-weight:800}
+.btn{font-size:11px;font-weight:800;letter-spacing:-.01em}
+.modal,.auth-card{font-family:var(--mizan-font)}
+.form-field>label,.auth-form label{font-size:11px;font-weight:750;letter-spacing:-.01em}
+.form-field input,.form-field select,.field-control{font-size:12px}
+.data-table{font-variant-numeric:tabular-nums}
+.data-table th{font-size:10px;letter-spacing:.025em}
+.data-table td{font-size:11px}
+.money,.stat-value{font-variant-numeric:tabular-nums}
+.dot{margin-left:0;margin-right:5px}
+.sidebar{border-left:0!important;border-right:1px solid var(--line)}
+.v4-backdrop-choices>span{margin-left:0;margin-right:6px}
+.v4-intro-eyebrow b{margin-right:0;margin-left:7px}
+.v4-cal-listitem{text-align:left}
+.v4-intro::after{left:auto;right:-70px}
+.period-control input{direction:ltr;text-align:left}
+input[type="number"],input[type="date"],input[type="month"]{direction:ltr}
+.v4-calendar-day{text-align:left}
+.v4-custom-row label{font-size:12px}
+.v4-theme-choice{text-align:left}
+.ltr{direction:ltr}
+.auth-card .auth-form input{text-align:left;direction:ltr}
+.v4-footnote,.helper,.notepad{font-size:11px;line-height:1.85}
+.v4-footnote{letter-spacing:0}
+.v4-intro-tags{gap:9px}
+.v4-quick-item strong{line-height:1.4}
+.v4-quick-item small{line-height:1.5}
+.v4-due-name strong{line-height:1.55}
+.v4-calendar-day small{line-height:1.35}
+.v4-modal-detail-row{line-height:1.6}
+.auth-help{line-height:1.75}
+@media(max-width:850px){.nav-item{font-size:12px}.pageheading{font-size:17px}}
+@media(max-width:650px){
+  .pageheading{font-size:16px}
+  .v4-intro h2{font-size:22px}
+  .stat-value,.v4-stats .stat-value{font-size:16px}
+  .v4-widget h3{font-size:12px}
+  .mobile-nav span{font-size:9px;letter-spacing:-.015em}
+  .mobile-bar{gap:1px}
+  .v4-calendar-day strong{font-size:11px}
+  .v4-calendar-day small{font-size:8px}
+  .btn{font-size:10.5px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+/* Flip legacy Arabic-oriented fixed placement for an English interface. */
+.quick-fab{left:auto!important;right:24px!important}
+@media(max-width:900px){
+  .sidebar{right:auto!important;left:0!important;transform:translateX(-105%)}
+  .sidebar.open{transform:translateX(0)}
+}
+@media(min-width:901px){.quick-fab{right:24px!important;bottom:24px!important}}
