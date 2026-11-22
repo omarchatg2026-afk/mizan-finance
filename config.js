@@ -1,5 +1,4 @@
-/* Public Supabase configuration. Never put a secret or service_role key in this file. */
 window.MIZAN_CONFIG = {
-  supabaseUrl: 'https://YOUR-PROJECT.supabase.co',
-  supabaseAnonKey: 'YOUR-PUBLISHABLE-KEY'
+  supabaseUrl: 'https://eztyrwzmwxmvsdmsuilp.supabase.co',
+  supabaseAnonKey: 'sb_publishable_pY9nAfeJUQEbCrK0X-XfWg_sEVKsMLx'
 };
